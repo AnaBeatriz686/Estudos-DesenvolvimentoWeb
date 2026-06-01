@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+table{
+    width: 100%;
+    border: 3px solid black;
+    border-collapse: collapse;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+th, td{
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #bdd8ff;
+}
+
+#semana{
+    background-color: #001c68;
+    color: white;
+}

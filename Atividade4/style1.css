@@ -1,0 +1,21 @@
+table{
+    width: 100%;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#semana{
+    background-color: #613b7a;
+    color: white;
+}
+
+#intervalo{
+    background-color: #e6d5f1;
+    color: #613b7a;
+}
