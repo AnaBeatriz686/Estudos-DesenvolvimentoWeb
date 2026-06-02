@@ -7,85 +7,108 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Formulário</title>
-    
+
     <style>
+        /* Estilização do título, da página, do formulário e do botão */
 
-        /*CSS*/
+        h1 {
+            text-align: center;
+            font-family: 'Oswald', sans-serif;
+        }
 
-    h1{
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-    }
-    #botao:hover{
-        background-color: #001c68;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-    body{
-        padding: 30px;
-        margin: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        body {
+            padding: 30px;
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    form{
-        display: grid;
-        grid-template-columns: 1fr;
-        align-items: center;
-    }
+        #formulario {
+            border: black solid 1px;
+            border-radius: 5px;
+            padding: 20px;
+            width: 350px;
+        }
 
-    #formulario{
-        display: flex;
-        align-items: center;
-        margin-bottom: 15px;
-    }
+        fieldset {
+            border: 1px solid #a7a6a6;
+            border-radius: 5px;
+            padding: 20px;
+            font-family: 'Oswald', sans-serif;
+        }
 
-    input:focus{
-        border: 2px solid #001c68;
-        outline: none;
-    }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-family: 'Oswald', sans-serif;
+        }
 
-    label{
-        width: 160px;
-    }
+        input {
+            padding: 5px;
+            width: 95%;
+            border: 2px solid #c6d0f1;
+            border-radius: 5px;
+        }
 
-    input{
-        padding: 5px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
+        input:focus {
+            border: 2px solid #001c68;
+            outline: none;
+        }
 
+        input:invalid {
+            border: 2px solid rgb(179, 89, 89);
+        }
+
+        #botao {
+            background-color: #001c68;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #botao:hover {
+            background-color: #9aade2;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
     </style>
-    <!--HTML-->
-    </head>
-    <body>
-        <h1>Formulário de Cadastro</h1>
-        <div id="formulario">
-            <form>
+
+</head>
+<body> 
+    <!--Estrutura do formulário-->
+    <h1>Formulário de Cadastro</h1>
+    <div id="formulario">
+        <form>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required><br><br>
-                
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
-                
+
                 <label for="data"> Data de nascimento:</label>
                 <input type="date" id="data" name="data" required><br><br>
 
                 <label for="curso">Curso:</label>
                 <input type="text" id="curso" name="curso" required><br><br>
-                
+
                 <label for="sexo"> Gênero:</label>
                 <input type="text" id="sexo" name="sexo" required><br><br>
-                
+
                 <label for="interesses">Interesses:</label>
                 <input type="text" id="interesses" name="interesses" required><br><br>
-                
+
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" required><br><br>
+
                 <button type="submit" id="botao">Enviar</button>
-            </div>
-        </form>    
-    </body>
-    </html>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
