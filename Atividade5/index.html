@@ -28,7 +28,7 @@
             border: black solid 1px;
             border-radius: 5px;
             padding: 20px;
-            width: 350px;
+            width: 500px;
         }
 
         fieldset {
@@ -64,6 +64,7 @@
             background-color: #001c68;
             color: white;
             border: none;
+            width: 100%;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
@@ -105,6 +106,12 @@
 
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" required><br><br>
+
+                <label for="comentarios">Comentários:</label>
+                <input type="text" id="comentarios" name="comentarios"><br><br>
+
+                <label for="foto"></label>
+                <input type="file" id="foto" name="foto" accept="image/*"><br><br>
 
                 <button type="submit" id="botao">Enviar</button>
             </fieldset>
